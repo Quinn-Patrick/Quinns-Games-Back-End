@@ -1,5 +1,6 @@
 package com.quinnsgames.models;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -18,6 +19,8 @@ public class GamePanel {
 	private String subtitle;
 	private String imageUrl;
 	private String linkUrl;
+	
+	@Column(length=1024)
 	private String description;
 	
 	public GamePanel() {
